@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form VTS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=MuseoModerno:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body id="main">
+    <!-- The page Title  -->
+    <h1 id="title">Random Survey Form</h1>
+    <!--  The desciption underneath the title -->
+    <p id="description">
+      Your feedback helps improve our platform.
+    </p>
+    <!--The beginning of the form. currently no action-->
+    <form id="survey-form" action="">
+      <!-- division element for the text input fields -->
+      <div id="textInput">
+        <!--The label for the name input field -->
+      <label for "name" id="name-label">
+        Name 
+        <br>
+        <!--The name text input field with a placeholder -->
+        <input name="name" id="name" type="text" required placeholder="John Doe">
+      </label>
+      
+      <br>
+        <!--the label for the email input field -->
+      <label for "email" id="email-label">
+        Email <br>
+        <!--The email input field -->
+        <input name="email" id="email" type="email" required placeholder="JohnDoe@example.com">
+      </label>
+       
+      <br>
+        <!-- the label for the Age (number) input field-->
+      <label for "age" id="number-label">Age (optional)<br>
+      <!--The age (number) input field, maximum value set to 122 as the oldest recorded human being as per a Google search -->
+        <input name="age" id="number" type="number" required placeholder="Age" min="18" max="122"></label>
+      </div>
+      
+      <br>
+      <!--A division for the dropdown input element. -->
+      <div id="dropdownInput">
+        <!--The label for the dropdown element -->
+  <label for "dropdown">Relationship Status<br>
+    <!-- a dropdown selection element. In this case a simple relationship status, more options can be added.-->
+    <select id="dropdown" name="relationship">
+      <!-- The different options that can be selected in the dropdown element.-->
+      <option value="single">Single</option> 
+      <option value="married">Married</option> 
+      <option value="divorced">Divorced</option> 
+      <option value="widowed">Widowed</option> 
+    </select>
+      </label>
+      </div>
+     
+      <br>
+      <!--a division for the radio group-->
+      <div id="radiogroupInput">
+        <!--The label for the radio group-->
+      <label for "rating">Please rate your experience on a scale of 1 to 5
+      </label>
+      <br>
+      <!--the label for the first option in the radio group-->
+    <label for "badRating">
+      <!--the input radio for the first option-->
+      <input id="badRating" name="rating" type="radio" value="1">1 (Bad) </label>
+      <!--the label for the second option in the radio group-->
+      <label for "belowAverageRating">
+        <!--the input radio for the second option-->
+      <input id="baRating" name="rating" type="radio" value="2">2 (Below average)</label>
+      <!--the label for the Third option in the radio group-->
+      <label for "averageRating">
+        <!--the input radio for the third option-->
+      <input id="averageRating" name="rating" type="radio" value="3">3 (Average)</label>
+      <!--the label for the fouth option in the radio group-->
+      <label for "aboveAverageRating">
+        <!--the input radio for the fouth option-->
+      <input id="aboveAverageRating" name="rating" type="radio" value="4">4 (Above average)</label>
+       <!--the label for the fifth option in the radio group-->
+      <label for "excellentRating">
+        <!--the input radio for the fifth option-->
+      <input id="excellentRating" name="rating" type="radio" value="5">5 (Excellent)</label>
+      </div>
+      <br>
+      <!--the division for the checkbox input section-->
+      <div id="checkboxInput">
+        <!--the label for the checkboxes to follow-->
+      <label for "improvements">Please select which areas could use improvement</label>
+      <br>
+        <!--The label for the first checkbox item-->
+      <label for "food">
+        <!--the first checkbox item-->
+      <input id="food" type="checkbox" name="improvements" value="food">Food
+      </label>
+        <!--The label for the second checkbox item-->
+      <label for "staff">
+        <!--the second checkbox item-->
+    <input id="staff" type="checkbox" name="improvements" value="staff">Staff
+      </label>
+        <!--The label for the third checkbox item-->
+      <label for "accommodation">
+        <!--the third checkbox item-->
+        <input id="accommodation" type="checkbox" name="improvements" value="accommodation">Accommodation</label>
+      </div>
+      
+      <br>
+      <!--the division for the textarea input section-->
+      <div id="textAreaInput">
+        <!--The label for the text area input-->
+     <label for "reviewSite">Additional Comments
+       <br>
+       <!--the textarea input box. with placeholder-->
+       <textarea id="reviewSite" name="review"  placeholder="(Optional)" form="survey-form" ></textarea>
+      </label>
+      </div>
+      
+      <br>
+      <!--the division for the submit button section-->
+      <div id="submitButtonInput">
+        <!--the submit button element-->
+       <button id="submit" type="submit">Submit</button>
+      </div>
+      <!--end of the form-->
+        </form>
+  </body>
+</html>
