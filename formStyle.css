@@ -3,17 +3,18 @@
 { 
   #main
   { 
-    
     font-family: 'Lato', sans-serif;
 background: repeating-linear-gradient(
 90deg,
 black 0%,
-Black 33.3%,
-white 33.3%,
-white 66.6%,
-Black 66.6%,  
+Black 20%,
+white 20%,
+white 80%,
+Black 80%,  
 black 100%);
-  }}
+margin: 0 auto;
+  }
+}
 
 div
 {
@@ -21,7 +22,7 @@ display:flex;
 margin-bottom:0.5rem;
 
 flex-direction:column;
-justify-content: space-around;
+justify-content: center;
 background-color: lightgrey;
 margin:auto;
 line-height: 2;
@@ -34,7 +35,8 @@ box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 {
 #main 
 {
-  max-width:540px
+  max-width:540px;
+  margin: 0 auto;
 }
 }
 
